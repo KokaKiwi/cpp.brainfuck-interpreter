@@ -1,18 +1,25 @@
 #ifndef INTERPRETER_H_
 #define INTERPRETER_H_
 
+#include <string>
+
+using namespace std;
+
 class BrainfuckInterpreter
 {
 public:
     BrainfuckInterpreter(void);
     ~BrainfuckInterpreter(void);
 
-    bool load(String);
+    void load(char *);
     void run(void);
 
 private:
-    char *program;
+    string *program;
     char memory[1024];
+
+    int pc;
+    int mp;
 };
 
 #endif

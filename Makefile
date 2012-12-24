@@ -1,7 +1,7 @@
 
 CPP := g++
 
-CPPFLAGS := -Iinclude
+CPPFLAGS := -Iinclude -g
 
 SRCS := $(wildcard src/*.cpp)
 OBJS := $(SRCS:.cpp=.o)
