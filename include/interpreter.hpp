@@ -3,8 +3,6 @@
 
 #include <string>
 
-using namespace std;
-
 class BrainfuckInterpreter
 {
 public:
@@ -15,7 +13,7 @@ public:
     void run(void);
 
 private:
-    string *program;
+    std::string *program;
     char memory[1024];
 
     int pc;

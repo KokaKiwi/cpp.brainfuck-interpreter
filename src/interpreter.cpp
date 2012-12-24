@@ -6,8 +6,6 @@
 #include <string>
 #include "interpreter.hpp"
 
-using namespace std;
-
 BrainfuckInterpreter::BrainfuckInterpreter()
 {
     this->program = NULL;
@@ -26,7 +24,7 @@ BrainfuckInterpreter::~BrainfuckInterpreter()
 
 void BrainfuckInterpreter::load(char *program)
 {
-    this->program = new string(program);
+    this->program = new std::string(program);
 }
 
 void BrainfuckInterpreter::run()
