@@ -15,5 +15,5 @@ int main(int argc, char **argv)
         fprintf(stderr, "Not enough arguments!\n");
     }
 
-    return (0);
+    return 0;
 }
