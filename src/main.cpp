@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <cstdio>
 #include "interpreter.hpp"
 
@@ -15,5 +16,5 @@ int main(int argc, char **argv)
         fprintf(stderr, "Not enough arguments!\n");
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
