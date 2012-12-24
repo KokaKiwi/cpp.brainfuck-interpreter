@@ -18,6 +18,8 @@ private:
 
     int pc;
     int mp;
+
+    void execStatement(char);
 };
 
 #endif
